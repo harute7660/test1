@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1:hover{color:red;}
+    h1:active{color:blue;}
+
+    input:enabled{background-color: white;}
+    input:disabled{background-color: gray;}
+    input:focus{background-color: orange;}
+    h2 + h3 {color:aqua;}
+    h2 ~ h3 {background-color: blue;}
+    input[type=checkbox]:checked + div{height: 0px;}
+    div {
+        overflow: hidden;
+        width: 650px; height:300px;
+        transition-duration: 1s;
+    }
+</style>
+<body>
+    <h1>사용가능</h1>
+    <input type="text">
+    <h1>사용불가능</h1>
+    <input disabled="disabled">
+    <h2>Header-1</h2>
+    <h3>Header-2</h3>
+    <h3>Header-2</h3>
+    <h3>Header-2</h3>
+    <input type="checkbox">
+    <div>
+        <h2>Header-1</h2>
+        <h3>Header-2</h3>
+        <h3>Header-2</h3>
+        <h3>Header-2</h3>
+    </div>
+</body>
+</html>

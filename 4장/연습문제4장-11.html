@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11번 문제</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <h2>글 작성하기</h2>
+            <table>
+                <tr>
+                    <td><label for="writer"><b>작성자</b></label></td>
+                    <td><input type="text" id="writer"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="id"><b>아이디</b></label></td>
+                    <td><input type="text" id="id"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="mail"><b>이메일</b></label></td>
+                    <td>
+                        <input type="text" id="mail">
+                        <span>@</span>
+                        <input type="text" id="domain">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="phone_prefix"><b>휴대폰</b></label></td>
+                    <td>
+                        <select id="phone_prefix">
+                            <option>010</option>
+                            <option>011</option>
+                            <option>012</option>
+                        </select>
+                        <span>-</span>
+                        <input type="text" id="phone_mid">
+                        <span>-</span>
+                        <input type="text" id="phone_last">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="title"><b>글제목</b></label></td>
+                    <td><input type="text" id="title"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="paragraph"><b>내용</b></label></td>
+                    <td><textarea id="paragraph" rows="5" cols="40"></textarea></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="제출"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>

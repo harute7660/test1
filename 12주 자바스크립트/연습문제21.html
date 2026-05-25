@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>팩토리얼 함수</title>
+</head>
+<body>
+    <script>
+        function factorial(n) {
+            let result = 1;
+
+            for (let i = 1; i <= n; i++) {
+                result = result * i;
+            }
+
+            return result;
+        }
+
+        let num = Number(prompt("숫자를 입력하세요"));
+
+        document.write(num + "! = " + factorial(num));
+    </script>
+</body>
+</html>

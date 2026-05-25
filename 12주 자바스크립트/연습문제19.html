@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>띠 출력 프로그램</title>
+</head>
+<body>
+    <script>
+        let year = Number(prompt("태어난 연도를 입력하세요"));
+
+        let result = year % 12;
+        let ddi;
+
+        switch (result) {
+            case 0:
+                ddi = "원숭이띠";
+                break;
+            case 1:
+                ddi = "닭띠";
+                break;
+            case 2:
+                ddi = "개띠";
+                break;
+            case 3:
+                ddi = "돼지띠";
+                break;
+            case 4:
+                ddi = "쥐띠";
+                break;
+            case 5:
+                ddi = "소띠";
+                break;
+            case 6:
+                ddi = "호랑이띠";
+                break;
+            case 7:
+                ddi = "토끼띠";
+                break;
+            case 8:
+                ddi = "용띠";
+                break;
+            case 9:
+                ddi = "뱀띠";
+                break;
+            case 10:
+                ddi = "말띠";
+                break;
+            case 11:
+                ddi = "양띠";
+                break;
+        }
+
+        alert(year + "년에 태어난 사람은 " + ddi + "입니다.");
+    </script>
+</body>
+</html>

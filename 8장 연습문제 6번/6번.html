@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+
+    <style>
+        /* 초기화 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        /* 기본 콘텐츠 구성 */
+        div.content {
+            padding: 16px;
+        }
+
+        li {
+            padding-top: 24px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid #c7c7c7;
+        }
+
+        h1 {
+            margin-bottom: 16px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        /* 세로 상태 */
+        @media screen and (orientation: portrait) {
+            div.left {
+                display: none;
+            }
+
+            div.right {
+                width: 100%;
+            }
+        }
+
+        /* 가로 상태 */
+        @media screen and (orientation: landscape) {
+            div.left {
+                display: block;
+                float: left;
+                width: 30%;
+            }
+
+            div.right {
+                float: right;
+                width: 70%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="left">
+            <div class="content">
+                <h1>List</h1>
+                <ul>
+                    <li>Velit ipsum ullamco</li>
+                    <li>Nulla qui officia anim</li>
+                    <li>quis proident tempor ipsum</li>
+                    <li>et sunt sit culpa ad</li>
+                    <li>fugiat reprehenderit sint mollit.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="content">
+                <h1>Lorem ipsum</h1>
+
+                <p>Sunt nostrud consequat. Aute do et ullamco. Deserunt irure Lorem. Velit ipsum ullamco et.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+                <p>Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
+                <p>Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
+                <p>Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora.</p>
+                <p>Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.</p>
+                <p>Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor.</p>
+                <p>Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor.</p>
+                <p>Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa.</p>
+                <p>Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum.</p>
+                <p>Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh.</p>
+                <p>Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent.</p>
+                <p>Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

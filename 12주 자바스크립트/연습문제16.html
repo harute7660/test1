@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>센티미터 변환</title>
+</head>
+<body>
+    <script>
+        let cm = Number(prompt("센티미터를 입력하세요"));
+
+        let totalInch = cm / 2.54;
+
+        let feet = Math.floor(totalInch / 12);
+        let inch = totalInch % 12;
+
+        alert(cm + "cm는 " + feet + "피트 " + inch.toFixed(2) + "인치입니다.");
+    </script>
+</body>
+</html>
